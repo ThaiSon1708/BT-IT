@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body{
     background-color: #74e38cdd;
     color: #3c29e3;
@@ -14,7 +14,7 @@ button:hover{
     padding: 5px ;
     
     border-radius: 5px;
-=======
+}
 body{
     background-color: #74e38cdd;
     color: #3c29e3;
@@ -30,5 +30,4 @@ button:hover{
     padding: 5px ;
     
     border-radius: 5px;
->>>>>>> cd1faf6ebee0714e8478449fd62f920ba9298b71
 }
