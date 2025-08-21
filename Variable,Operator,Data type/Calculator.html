@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -85,4 +86,93 @@
             document.getElementById("result").innerText = "Kết quả: " + res;
         }
     </script>
+=======
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        body {
+            background: #f7f8fa;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .calculator {
+            max-width: 350px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(34,34,34,0.08);
+            padding: 32px 28px 24px 28px;
+            text-align: center;
+        }
+        h2 {
+            color: #1976d2;
+            margin-bottom: 24px;
+        }
+        input[type="number"] {
+            width: 80%;
+            padding: 8px 10px;
+            margin: 8px 0;
+            border: 1px solid #b2dfdb;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        .btn-group {
+            margin: 18px 0;
+        }
+        button {
+            background: #43cea2;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            margin: 0 6px 8px 6px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #1976d2;
+        }
+        #result {
+            margin-top: 18px;
+            font-size: 1.15rem;
+            color: #d76d77;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Calculator</h2>
+        <input type="number" id="num1" placeholder="Nhập số thứ nhất">
+        <input type="number" id="num2" placeholder="Nhập số thứ hai">
+        <div class="btn-group">
+            <button type="button" onclick="cal('+')">+</button>
+            <button type="button" onclick="cal('-')">-</button>
+            <button type="button" onclick="cal('*')">×</button>
+            <button type="button" onclick="cal('/')">÷</button>
+        </div>
+        <div id="result">Kết quả: </div>
+    </div>
+    <script>
+        function cal(TínhToán) {
+            const a = parseFloat(document.getElementById("num1").value);
+            const b = parseFloat(document.getElementById("num2").value);
+            let res = "";
+            if (isNaN(a) || isNaN(b)) {
+                res = "Vui lòng nhập đủ hai số!";
+            } else {
+                switch(TínhToán) {
+                    case '+': res = a + b; break;
+                    case '-': res = a - b; break;
+                    case '*': res = a * b; break;
+                    case '/': res = (b === 0) ? "Không thể chia cho 0!" : (a / b); break;
+                }
+            }
+            document.getElementById("result").innerText = "Kết quả: " + res;
+        }
+    </script>
+>>>>>>> cd1faf6ebee0714e8478449fd62f920ba9298b71
 </body>
