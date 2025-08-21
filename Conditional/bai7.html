@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = parseFloat(prompt(" Nhap cước điện thoại cho một hộ gia đình dựa trên các thông số được cung cấp:"));
+        if (x < 0) {
+            document.write("Không hợp lệ");
+        } else if (x <= 50) {
+            document.write("Cước điện thoại là: " + (x * 0.15));
+        } else if (x <= 150) {
+            document.write("Cước điện thoại là: " + (7.5 + (x - 50) * 0.25));
+        } else {
+            document.write("Cước điện thoại là: " + (32.5 + (x - 150) * 0.4));
+        }
+    </script>
+</body>
+</html>

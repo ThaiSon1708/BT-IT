@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhap so thu 1:"));
+        let b = parseFloat(prompt("Nhap so thu 2:"));
+        let c = parseFloat(prompt("Nhap so thu 3:"));
+        if (a > b && a > c) {
+            document.write("So lon nhat la: " + a);
+        } else if (b > a && b > c) {
+            document.write("So lon nhat la: " + b);
+        } else if (c > a && c > b) {
+            document.write("So lon nhat la: " + c);
+        } else {
+            document.write("Khong co so lon nhat duy nhat");
+        }
+    </script>
+</body>
+</html>
