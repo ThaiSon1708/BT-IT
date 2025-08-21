@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = prompt("Nhap 1 so tu (1-7):");
+        x = Number(x);
+        if(x>=75){
+            alert("passed");
+        }
+            else {
+                alert("failed");
+        }                
+    </script>
+    <script>
+        let a = parseFloat(prompt("Nhap so a:"));
+        if(a<=0 || a>=100 || !isNaN(a)){
+            if(a>75){
+                alert("passed");
+            } else {
+                alert("failed");
+            }
+        }
+        let b = parseFloat(prompt("Nhap so b:"));
+        if(b<=0 || b>=100 || !isNaN(b)){
+            if(b>=75){
+                alert("passed lan 2");
+            } else {
+                alert("cook");
+            }
+        }
+            else {
+            document.write("Khong hop le");
+        }
+    </script>
+    <script>
+        let x = parseFloat(prompt("Nhap so ngay cua 1 thang (1-31):"));
+        x = Month(x);
+        switch(x){
+            case 1:case 3: case 5: case 7: case 8: case 10: case 12:
+                document.write("Thang co 31 ngay");
+                break;
+            case 4: case 6: case 9: case 11:
+                document.write("Thang co 30 ngay");
+                break;
+            case 2:
+                document.write("Thang co 28 ngay");
+                break;
+            default:
+                document.write("Khong hop le");
+        }
+    </script>
+
+        
+</body>
+</html>

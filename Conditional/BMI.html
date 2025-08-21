@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let x = parseFloat(prompt("Nhap can nang (kg):"));
+       let y = parseFloat(prompt("Nhap chieu cao (m):"));
+         if(x > 0 && y > 0) {
+              let bmi = x / (y * y);
+              if(bmi < 18.5) {
+                alert("Underweight");
+              } else if(bmi >= 18.5 && bmi < 24.9) {
+                alert("Normal weight");
+              } else if(bmi >= 25 && bmi < 29.9) {
+                alert("Overweight");
+              } else {
+                alert("Obesity");
+              }
+         } else {
+              alert("Nhap thong tin khong hop le");
+         }
+    </script>
+</body>
+</html>
