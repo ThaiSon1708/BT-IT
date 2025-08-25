@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = parsenFloat(prompt("Nhap 1 so nguyen :"));
+        if(number <0 || number >120 ){
+            document.write("So ban vua nhap khong hop le");
+        } else if(number <16){
+            document.write("Ban la tre con");
+        } else if(number <18){
+            document.write("Ban la vi thanh nien");
+        } else if(number <40){
+            document.write("Ban la nguoi lon");
+        } else if(number <60){
+            document.write("Ban la nguoi gia");
+        } else{
+            document.write("Ban la nguoi cao tuoi");
+        }
+    </script>
+</body>
+</html>
