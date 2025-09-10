@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm số từ trong chuỗi</title>
+</head>
+<body>
+    <script>
+    // Nhập chuỗi từ người dùng
+    let str = prompt("Nhập vào một chuỗi:");
+
+    // Xóa khoảng trắng đầu/cuối
+    str = str.trim();
+
+    // Nếu chuỗi rỗng thì số từ = 0
+    if (str === "") {
+        document.write("Số từ trong chuỗi là: 0");
+    } else {
+        // Tách chuỗi thành mảng theo khoảng trắng
+        let words = str.split(" ");
+        
+        // Lọc bỏ những phần tử rỗng (trường hợp có nhiều khoảng trắng liên tiếp)
+        let validWords = words.filter(word => word !== "");
+        
+        // In kết quả
+        document.write("Số từ trong chuỗi là: " + validWords.length);
+    }
+</script>
+
+</body>
+</html>

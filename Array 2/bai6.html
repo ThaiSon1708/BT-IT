@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = prompt("Nhap 1 mang ky tu, cac phan tu cach nhau boi dau - :");
+        let arr = input.split("-");
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === '-'){
+                arr[i] = '_';
+            }
+            document.write("" + arr[i] + "_ ");
+        }
+    </script>
+</body>
+</html>
