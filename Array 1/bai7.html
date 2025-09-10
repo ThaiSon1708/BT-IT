@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [4, 7, 12, 9, 1, 15, 8, 3, 10, 6];
+        document.write("Array ban dau: " + arr + "<br>");
+        let V = parseInt(prompt("Nhap gia tri V:"));
+        let index = arr.indexOf(V);
+        if (index !==-1){
+            for (let i = index; i < arr.length - 1; i++) {
+                arr[i] = arr[i + 1];
+            }
+            arr.pop(); // Xoa phan tu cuoi cung
+            document.write("Array sau khi xoa " + V + ": " + arr);
+        } else {
+            document.write("Gia tri " + V + " khong co trong mang.");
+        }
+    </script>
+</body>
+</html>

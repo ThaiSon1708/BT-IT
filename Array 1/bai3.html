@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Khoi tao mang so nguyen 
+        let arr = [5, 12, 8, 20, 7, 15, 3, 18];
+        document.write("Array ban dau: " + arr + "<br>");
+        // Tim gia tri lon nhat trong mang
+        let max = arr[0];
+        let sum = 0;
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+            sum += arr[i];
+        }
+        let average = sum / arr.length;
+        document.write("Gia tri lon nhat trong mang: " + max + "<br>");
+        document.write("Gia tri trung binh cua mang: " + average + "<br>");
+    </script>
+</body>
+</html>

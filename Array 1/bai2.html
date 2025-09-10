@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr =[8, 15, 3, 22, 7, 19, 5, 12, 27, 10];
+        max = arr[0];
+        let index = 0;
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                index = i;
+            }
+        }
+        document.write("Giá trị lớn nhất trong mảng là: " + max + "<br>");
+        document.write("Vị trí của giá trị lớn nhất trong mảng là: " + index);
+    </script>
+</body>
+</html>
