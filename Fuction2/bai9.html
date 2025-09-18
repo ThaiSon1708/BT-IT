@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Kết quả:</h2>
+    <id id="result"></id>
+    <script>
+        function checkCharInArray(char, arr) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === char) {
+                    count++;
+                }
+            }
+            return count > 0 ? count : -1;
+        }
+        let charArray ={'a', 'b', 'c', 'd', 'e'};
+        let inputChar = prompt("Nhập một ký tự can kiem tra trong mang:" + charArray.join(", "));
+        let result = checkCharInArray(inputChar, charArray);
+        if (result !== -1) {
+            document.getElementById("result").textContent = "Ký tự '" + inputChar + "' xuất hiện " + result + " lần trong mảng.";
+        } else {
+            document.getElementById("result").textContent = "Ký tự '" + inputChar + "' không tồn tại trong mảng.";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Kết quả:</h2>
+    <id id="result"></id>
+    <script>
+        function swap(a,b){
+            let temp = a;
+            a = b;
+            b = temp;
+            return [a,b];
+        }
+        let num1 = Number(prompt("Nhập số thứ nhất:"));
+        let num2 = Number(prompt("Nhập số thứ hai:"));
+        let swappedValues = swap(num1, num2);
+        document.getElementById("result").textContent = "Truoc khi doi : num1=" + num1 + ", num2=" + num2 +
+            "\nSau khi doi: num1=" + swappedValues[0] + ", num2=" + swappedValues[1];
+    </script>
+</body>
+</html>

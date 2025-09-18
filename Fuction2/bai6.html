@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Kết quả :</h2>
+    <id id="result"></id>
+    <script>
+        function isPositiveInteger(num){
+            return Number.isInteger(num) && num > 0;
+        }
+        let input = prompt("Nhập một số nguyên dương:");
+        let number = Number(input);
+        let result = isPositiveInteger(number);
+        document.getElementById("result").textContent = number + " là số nguyên dương: " + result;
+    </script>
+</body>
+</html>
