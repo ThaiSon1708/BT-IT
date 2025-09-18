@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function CheckandSum(parem1 ,param2){
+            if (parem1 > parem2){
+                alert("Giá trị của tham số thứ nhất lớn hơn tham số thứ hai:");
+                return parem1 + parem2;
+            }
+        }
+        CheckandSum(10,5);
+        const result = CheckandSum(10,5);
+        document.write("Kết quả là: " + result);
+        const result2 = CheckandSum(5,10);
+        document.write("<br>Kết quả là: " + result2);
+        const result3 = CheckandSum(5,5);
+        document.write("<br>Kết quả là: " + result3);
+    </script>
+</body>
+</html>

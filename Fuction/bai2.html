@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tăng giá trị của 1 số </h1>
+    <p> Gia tri ban dau: <span id="originalValue>"></span></p>
+    <p> Gia tri sau khi tang: <span id="increasedValue>"></span></p>
+    <script>
+        //Ham gia tri tang len 1
+        function increasedValue(num) {
+            return num + 1;
+        }
+        //Gia tri ban dau
+        const myNumber = 10;
+        const newValue = increasedValue(myNumber);
+        document.getElementById("originalValue").innerText = myNumber;
+        document.getElementById("increasedValue").innerText = newValue;
+    </script>           
+</body>
+</html>
