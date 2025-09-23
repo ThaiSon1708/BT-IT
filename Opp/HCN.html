@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="Rectangle" width="400" height="400" style="border:1px solid #000000;"></canvas>
+    <script> 
+        class Rectangle {
+            constructor(width, height) {
+                this.width = width;
+                this.height = height;
+            }
+            getHeight() {
+                return this.height;
+            }
+            getWidth() {
+                return this.width;
+            }
+            setHeight(height) {
+                this.height = height;
+            }
+            setWidth(width) {
+                this.width = width;
+            }
+            getArea() {
+                return this.width * this.height;
+            }
+            getPerimeter() {
+                return 2 * (this.width + this.height);
+            }
+        }
+        let myRectangle = new Rectangle(200, 100);
+        let width = myRectangle.getWidth();
+        let height = myRectangle.getHeight();
+        myRectangle.setWidth(150);
+        myRectangle.setHeight(80);
+        document.write(myRectangle.getWidth());
+        let canvas = document.getElementById("Rectangle");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(10, 10, myRectangle.getWidth(), myRectangle.getHeight());
+    </script>
+</body>
+</html>

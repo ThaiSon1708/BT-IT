@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Temperature {
+            constructor(celsius) {
+                this.celsius = celsius;
+            }
+            getCelsius() {
+                return this.celsius;
+            }
+            setCelsius(celsius) {
+                this.celsius = celsius;
+            }
+            toFahrenheit() {
+                return (this.celsius * 9/5) + 32;
+            }
+            toKelvin() {
+                return this.celsius + 273.15;
+            }
+        }
+        let temp = new Temperature(25);
+        document.write("Nhiệt độ ban đầu (Celsius): " + temp.getCelsius() + "°C<br>");
+        document.write("Chuyển đổi sang Fahrenheit: " + temp.toFahrenheit() + "°F<br>");
+        document.write("Chuyển đổi sang Kelvin: " + temp.toKelvin() + "K<br>");
+        // Thay đổi nhiệt độ và hiển thị lại
+        temp.setCelsius(30);
+        document.write("Nhiệt độ sau khi thay đổi (Celsius): " + temp.getCelsius() + "°C<br>");
+        document.write("Chuyển đổi sang Fahrenheit: " + temp.toFahrenheit() + "°F<br>");
+        document.write("Chuyển đổi sang Kelvin: " + temp.toKelvin() + "K<br>");
+    </script>
+</body>
+</html>
